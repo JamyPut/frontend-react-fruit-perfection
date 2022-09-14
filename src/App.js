@@ -1,13 +1,23 @@
 import React from 'react';
-import './App.css';
 
 import citroen from "./assets/citroenen.jpeg";
 import ijsblokjes from "./assets/ijsblokjes.jpg";
-import limoen from "./assets/limoenen.png";
+import limoen from "./assets/limoenen.png"
+import { ReactComponent as ShoppingCart } from './assets/winkelmandje.svg';
+
+import './App.css';
 
 function App() {
   return (
     <>
+    <nav>
+        <ul>
+            <li><a href="/">Shop</a></li>
+            <li><a href="/">Ons verhaal</a></li>
+            <li><a href="/">Blog</a></li>
+        </ul>
+        <ShoppingCart className={"shopping-cart-icon"}/>
+    </nav>
     <header>
         <h1>Fruit perfection</h1>
         <button type={"button"} >
